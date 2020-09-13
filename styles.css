@@ -175,7 +175,7 @@
 .contentBottom {
     width: 100%;
     height: 780px;
-    background-image: url(/projects/staticlayout/assets/content.jpg);
+    background-image: url(./assets/content.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
