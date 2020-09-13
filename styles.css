@@ -1,0 +1,182 @@
+
+.top {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0px;
+}
+
+#masthead {
+    width: 100%;
+    height: 575px;
+    position: relative;
+}
+
+#logo {
+    width: 300px;
+    height: 90px;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+.oneMonth {
+    color: #0e9c85;
+    position: absolute;
+    top: 140px;
+    left: 660px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.price {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 275px;
+    left: 475px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.addOns {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 365px;
+    left: 475px;
+}
+
+.logIn {
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: transparent;
+    border: transparent;
+    font-weight: bolder;
+    outline: none;
+    
+}
+
+
+.logIn:hover {
+    color:lightgray;
+}
+
+.freeTrial {
+    color: black;
+    background-color:white;
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: transparent;
+    border-radius: 5px;
+    top: 420px;
+    right: 625px;
+    height: 50px;
+    width: 270px;
+}
+
+.freeTrial:hover {
+    background-color: lightgray;
+}
+
+.finePrint {
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 475px;
+    left: 625px;
+}
+
+.middleBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 140px;
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 25, 39), rgb(27, 78, 112))
+}
+
+
+#disneyLogo {
+    width: 300px;
+    left: -90px;
+    top: 20px;
+    position: relative;
+}
+
+.bundle {
+    color: rgb(21, 173, 140);
+    left: 357px;
+    top: 15px;
+    position: relative;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bundleTwo {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    color: white;
+    left: -180px;
+    top: 25px;
+}
+
+
+.bundleButton {
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    color: white;
+    background-color:transparent;
+    border-radius: 7px;
+    border: solid white;
+    width: 150px;
+    height: 52px;
+    top: 30px;
+}
+
+.moreDetails {
+    border: transparent;
+    background-color: transparent;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    text-decoration: underline;
+    position: relative;
+    left: -775px;
+    top: 30px;
+}
+
+.termsApply{
+    font-size: 10px;
+    color: white;
+    border: transparent;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    position: relative;
+    top: 90px;
+    right: 125px;
+
+}
+
+
+.contentBottom {
+    width: 100%;
+    height: 780px;
+    background-image: url(/projects/staticlayout/assets/content.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
