@@ -1,0 +1,25 @@
+.pokeInput {
+    text-align: center;
+}
+
+.search {
+    width: 260px;
+}
+
+#pokeName {
+    text-align: center;
+}
+
+#pokeImage {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+#pokeShiny {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
