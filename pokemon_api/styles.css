@@ -8,8 +8,14 @@
     justify-content: space-evenly;
 }
 
+.searchFlexParent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 .bigParent {
-    border: solid red;
+    border:solid thick black;
     border-radius: 20px;
     width: 90%;
     margin: auto;
@@ -37,12 +43,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 125%;
+    width: 150%;
 }
 
 #pokeShiny {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 125%;
+    width: 150%;
 }
