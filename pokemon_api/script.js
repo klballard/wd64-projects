@@ -30,14 +30,9 @@ function displayResults(json) {
 }
 
 function displayResults(json) {
-    console.log(json.response.docs);
-};
-
-
-function displayResults(json) {
     console.log("DisplayResults", json);
-
     document.getElementById('pokeName').innerHTML = json.name;
+    document.getElementById('pokeNumber').innerHTML = `pokedex #` + json.id;
     document.getElementById('pokeImage').src = json.sprites.front_default;
     document.getElementById('pokeShiny').src = json.sprites.front_shiny;
 };

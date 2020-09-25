@@ -8,17 +8,19 @@
 </head>
 <body>
 <div class="pokeInput">    
-    <h1>PokeSearch!</h1>
+    <h1>pokesearch!</h1>
         <form>   <!--REVIEW here for text submission-->
             <label for="search"></label>
             <input type="text" id="search" placeholder="enter the pokemon name! (lowercase please)" class="search" required>
-            <button class="submit">GO!</button>
+            <button class="submit" data-toggle="tooltip" data-placement="right" title="find the dex number, normal and shiny sprites!">GO!</button>
         </form>
 </div>
 <section>
 <h3 id=pokeName></h3>
-
-<img id="pokeImage" src="">
+<h3 id=pokeNumber></h3>
+<h5 id=sprite>normal:</h2>
+<img id="pokeImage" src=""><br>
+<h5 id=sprite>shiny:</h2><br>
 <img id="pokeShiny" src="">
 
 </section>
