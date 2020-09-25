@@ -7,23 +7,70 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="pokeInput">    
-    <h1>pokesearch!</h1>
-        <form>   <!--REVIEW here for text submission-->
+<div class="bigParent">
+    <div class="pokeInput">    
+        <h1>pokesearch!</h1>
+            <form>   <!--REVIEW here for text submission-->
             <label for="search"></label>
             <input type="text" id="search" placeholder="enter the pokemon name! (lowercase please)" class="search" required>
-            <button class="submit" data-toggle="tooltip" data-placement="right" title="find the dex number, normal and shiny sprites!">GO!</button>
+            <button class="submit" data-toggle="tooltip" data-placement="right" title="find the dex number, stats, normal and shiny sprites!">GO!</button>
         </form>
-</div>
-<section>
-<h3 id=pokeName></h3>
-<h3 id=pokeNumber></h3>
-<h5 id=sprite>normal:</h2>
-<img id="pokeImage" src=""><br>
-<h5 id=sprite>shiny:</h2><br>
-<img id="pokeShiny" src="">
+    </div>
+<br><br><br>
 
-</section>
+<h3 id=pokeName></h3>
+<h3 id=pokeNumber></h3><br><br>
+
+<div class="flexBox">
+    <div class="flexChildOne">
+        <h4 id=sprite>Normal:</h4>
+        <img id="pokeImage" src="">
+        </div>
+    <div class="flexChildTwo">
+        <h4 id=sprite>Shiny:</h4>
+        <img id="pokeShiny" src="">
+</div>
+
+<!--Stat Table-->
+<div class="flexChildThree">
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Stats:</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">HP:</th>
+        <td id="pokeHealth"></td>
+      </tr>
+      <tr>
+        <th scope="row">Attack:</th>
+        <td id="pokeAttack"></td>
+      </tr>
+      <tr>
+        <th scope="row">Defense:</th>
+        <td id="pokeDefense"></td>
+      </tr>
+      <tr>
+        <th scope="row">Sp. Attack:</th>
+        <td id="pokeSpAttack"></td>
+      </tr>
+      <tr>
+        <th scope="row">Sp. Defense:</th>
+        <td id="pokeSpDefense"></td>
+      </tr>
+      <tr>
+        <th scope="row">Speed:</th>
+        <td id="pokeSpeed"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</div>
+
 
 <script src="script.js"></script>
 </body>

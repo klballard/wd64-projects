@@ -7,8 +7,7 @@ const searchTerm = document.querySelector('.search');
 const searchForm = document.querySelector('form');
 const submitBtn = document.querySelector('.submit');
 
-// result display
-const section = document.querySelector('section');
+
 
 searchForm.addEventListener('submit', fetchResults);
 
@@ -35,36 +34,10 @@ function displayResults(json) {
     document.getElementById('pokeNumber').innerHTML = `pokedex #` + json.id;
     document.getElementById('pokeImage').src = json.sprites.front_default;
     document.getElementById('pokeShiny').src = json.sprites.front_shiny;
+    document.getElementById('pokeHealth').innerHTML = json.stats[0].base_stat;
+    document.getElementById('pokeAttack').innerHTML = json.stats[1].base_stat;
+    document.getElementById('pokeDefense').innerHTML = json.stats[2].base_stat;
+    document.getElementById('pokeSpAttack').innerHTML = json.stats[3].base_stat;
+    document.getElementById('pokeSpDefense').innerHTML = json.stats[4].base_stat;
+    document.getElementById('pokeSpeed').innerHTML = json.stats[5].base_stat;
 };
-
-
-
-
-
-/*
-
-  missing a value somewhere else, check the NY Times line 34-41
-  checkout NYT line 70 for articles - using . notation to access the fetched api
-fetchResults = (e) => {
-    (e).preventDefault();
-    let pokeNumber = document.getElementById('.pokeNumber').value;
-    url = baseURL + pokeNumber, (pokemon) => {
-        document.getElementById(".pokeName").innerHTML = pokemon.name;
-        document.getElementById(".pokeImage").src = pokemon.sprites.front_default;
-    }
-};
-
-document.getElementById("pokeForm").addEventListener('submit', fetchResults);
-
-
-
-
-
-
-
-
-
-function search = (e) => {
-    (e).preventDefault();    
-}
-*/
