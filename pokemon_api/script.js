@@ -31,7 +31,8 @@ function displayResults(json) {
 function displayResults(json) {
     console.log("DisplayResults", json);
     document.getElementById('pokeName').innerHTML = json.name;
-    document.getElementById('pokeNumber').innerHTML = `pokedex #` + json.id;
+    document.getElementById('pokeName').style.textTransform = "capitalize";
+    document.getElementById('pokeNumber').innerHTML = `Pokedex #` + json.id;
     document.getElementById('pokeImage').src = json.sprites.front_default;
     document.getElementById('pokeShiny').src = json.sprites.front_shiny;
     document.getElementById('pokeHealth').innerHTML = json.stats[0].base_stat;

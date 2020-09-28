@@ -29,6 +29,7 @@
 
 #pokeName {
     text-align: center;
+    text-transform: capitalize;
 }
 
 #pokeNumber {
