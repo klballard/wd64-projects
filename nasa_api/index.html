@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="submitAndResults">
+    <div class="submitField">
+        <!--Long, Lat, and Date-->
+        <h3>Image Search by Coordinates/Date</h3>
+        <form>
+            <p>
+                <label for="longitude">Enter a longitude value:</label>
+                <input type="text" id="longitude" class="longitude" required placeholder="-180 through +180">
+            </p>
+            <p>
+                <label for="latitude">Enter a latitude value:</label>
+                <input type="text" id="latitude" class="latitude" required placeholder="-90 through +90">
+                <div class="dropdown">
+                    <span>Need help with coordinates? Try these! (mouseover)</span>
+                    <div class="dropdown-content">
+                      <p>New York City: LON -73.935 LAT 40.73</p>
+                      <p>Tokyo, Japan: LON 139.839 LAT 35.652</p>
+                      <p>Moscow, Russia: LON 37.618 LAT 55.751</p>
+                      <p>Paris, France: LON 2.349 LAT 48.864</p>
+                    </div>
+                  </div>
+            </div>
+            </p>
+            <p>
+                <label for="enter-date">Enter a date (format MMDDYYYY): </label>
+                <input type="date" id="enter-date" class="enter-date" pattern="[0-9]{8}">
+            </p>
+            <p>
+                <button class="submit">Submit!</button>
+            </p>
+            
+
+
+        </form>
+        
+
+
+    <div class="imageResults">
+        <img id="result" src='' alt='Image not loading? There might not be an available picture based on the set parameters.'>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
