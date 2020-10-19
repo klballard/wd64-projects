@@ -8,8 +8,12 @@ const submitBtn = document.querySelector('.submit');
 const latitude = document.querySelector('.latitude');
 const longitude = document.querySelector('.longitude');
 const enterDate = document.querySelector('.enter-date');
-
 searchForm.addEventListener('submit', fetchResults);
+
+//dropdown
+
+
+
 
 //fetching from the api
 function fetchResults(e) {

@@ -20,15 +20,6 @@
             <p>
                 <label for="latitude">Enter a latitude value:</label>
                 <input type="text" id="latitude" class="latitude" required placeholder="-90 through +90">
-                <div class="dropdown">
-                    <span>Need help with coordinates? Try these! (mouseover)</span>
-                    <div class="dropdown-content">
-                      <p>New York City: LON -73.935 LAT 40.73</p>
-                      <p>Tokyo, Japan: LON 139.839 LAT 35.652</p>
-                      <p>Moscow, Russia: LON 37.618 LAT 55.751</p>
-                      <p>Paris, France: LON 2.349 LAT 48.864</p>
-                    </div>
-                  </div>
             </div>
             </p>
             <p>
@@ -39,15 +30,60 @@
                 <button class="submit">Submit!</button>
             </p>
             
-
-
         </form>
-        
-
 
     <div class="imageResults">
         <img id="result" src='' alt='Image not loading? There might not be an available picture based on the set parameters.'>
         </div>
+    
+    <div class="tableH">    
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">City</th>
+            <th scope="col">LON</th>
+            <th scope="col">LAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">New York City, NY</th>
+            <td>-73.935242</td>
+            <td>40.730610</td>
+          </tr>
+          <tr>
+            <th scope="row">Los Angeles, CA</th>
+            <td>-118.243683</td>
+            <td>34.052235</td>
+          </tr>
+          <tr>
+            <th scope="row">Indianapolis, IN</th>
+            <td>-86.148003</td>
+            <td>39.791000</td>
+          </tr>
+          <tr>
+            <th scope="row">Cairo, Egypt</th>
+            <td>31.233334</td>
+            <td>30.033333</td>
+          </tr>
+          <tr>
+            <th scope="row">Tokyo, Japan</th>
+            <td>139.839478</td>
+            <td>35.652832</td>
+          </tr>
+          <tr>
+            <th scope="row">Mexico City, Mexico</th>
+            <td>-99.133209</td>
+            <td>19.432608</td>
+          </tr>
+          <tr>
+            <th scope="row">Area 51</th>
+            <td title="-115.80666344">REDACTED</td>
+            <td title="-37.234332396">REDACTED</td>
+          </tr>
+        </tbody>
+      </table>
+    
     </div>
 </div>
 <script src="script.js"></script>
